@@ -18,50 +18,7 @@ h1 {
     font-size: 1.8em;
 }
 
-.tiling-container {
-    display: grid;
-    height: 95vh;
-    grid-template-columns: 1fr 1fr 1.5fr;
-    grid-template-rows: auto 1fr auto;
-    gap: 12px;
+
+.logo {
+    font-family: 'JetBrains Mono', monospace;
 }
-
-.tile {
-    background: var(--tile-bg);
-    border: 1px solid var(--border);
-    padding: 20px;
-    border-radius: 4px;
-    transition: border-color 0.3s ease;
-}
-
-.tile:hover {
-    border-color: var(--accent);
-}
-
-
-.header { grid-column: 1 / 4; }
-.about { grid-column: 1 / 2; }
-.stats { grid-column: 1 / 2; }
-.projects { grid-column: 2 / 4; grid-row: 2 / 4; }
-.stack { grid-column: 1 / 2; }
-
-.cursor {
-    animation: blink 1s infinite;
-    color: var(--accent);
-}
-
-.typewriter::after {
-    content: "_";
-    color: #1793D1;
-    animation: blink 0.5s step-end infinite;
-}
-
-.typewriter.typed-done::after {
-    display: none;
-}
-
-@keyframes blink {
-    50% { opacity: 0; }
-}
-
-@keyframes blink { 50% { opacity: 0; } }
