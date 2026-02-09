@@ -302,3 +302,21 @@ h2, h3 {
     color: #a9abaf;
     line-height: 1.5;
 }
+
+
+.content-section {
+    margin-bottom: 60px;
+    scroll-margin-top: 120px;
+}
+
+.content-section:last-child {
+    margin-bottom: 40vh;
+}
+
+.right {
+    box-sizing: border-box;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
