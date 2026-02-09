@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: var(--bg);
     color: var(--fg);
     font-family: 'JetBrains Mono', monospace;
     margin: 0;
@@ -151,8 +151,43 @@ h2, h3 {
 
 .subtext {
     font-size: 0.85rem;
-    color: var(--accent_light);
-    opacity: 0.7;
+    color: var(--accent);
     display: block;
     margin-top: 4px;
+}
+
+.left {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    align-items: center;
+    width: 600px;
+    height: 100vh;
+    flex-shrink: 0;
+    border-right: solid 2px var(--accent);
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.social-links {
+    margin-top: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.social-links a {
+    color: #565f89;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    color: var(--fg);
+    transform: translateY(-3px);
+}
+
+.social-links svg {
+    width: 32px;
+    height: 32px;
 }
