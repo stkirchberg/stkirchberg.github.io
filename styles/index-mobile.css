@@ -1,0 +1,29 @@
+:root {
+    --bg: #1a1b26;
+    --fg: #a9b1d6;
+    --tile-bg: #24283b;
+    --accent: #7aa2f7;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 15px;
+}
+
+.tiling-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tile {
+    background: var(--tile-bg);
+    padding: 15px;
+    border-left: 4px solid var(--accent);
+}
+
+h1 { font-size: 1.2rem; }
+h2 { font-size: 1rem; color: var(--accent); }
