@@ -40,6 +40,9 @@ window.addEventListener('load', () => {
 
 
 
+document.querySelector('.whatsapp-link').addEventListener('click', (e) => {
+    e.preventDefault();
+});
 
 
 window.addEventListener('mousemove', (e) => {

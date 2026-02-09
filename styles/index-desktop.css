@@ -206,3 +206,49 @@ h2, h3 {
     width: 32px;
     height: 32px;
 }
+
+.whatsapp-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-popup {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background-color: var(--accent);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+}
+
+.whatsapp-popup::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--accent) transparent transparent transparent;
+}
+
+.whatsapp-container:hover .whatsapp-popup {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.whatsapp-link:hover {
+    color: red !important;
+}
