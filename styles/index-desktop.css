@@ -5,6 +5,10 @@
     --border: #414868;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg);
     color: var(--fg);
@@ -307,7 +311,7 @@ h2, h3 {
 
 .content-section {
     margin-bottom: 60px;
-    scroll-margin-top: 120px;
+    scroll-margin-top: 40px;
 }
 
 .content-section:last-child {
@@ -371,7 +375,7 @@ h2, h3 {
 .project-img {
     width: 100%;
     height: auto;
-    filter: sepia(20%) contrast(1.1) brightness(0.9); /* Subtiler Retro-Tech-Look */
+    filter: sepia(20%) contrast(1.1) brightness(0.9);
     border-bottom: 1px solid #333;
 }
 
@@ -441,3 +445,92 @@ h2, h3 {
     font-family: 'Courier New', monospace;
     color: #fff;
 }
+
+
+
+#contact .section-title {
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+#contact .terminal-card.contact-full {
+    padding: 0 !important;
+    background: transparent;
+    border: none;
+}
+
+.terminal-welcome {
+    color: #888;
+    font-size: 0.9rem;
+    margin: 0 0 2rem 0 !important;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 1.5rem;
+}
+
+.terminal-welcome p {
+    margin: 0 0 0.5rem 0 !important;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    padding: 0;
+}
+
+.cat-title {
+    color: var(--accent);
+    font-size: 1.1rem;
+    margin: 0 0 1.5rem 0;
+    font-family: 'Courier New', monospace;
+}
+
+.contact-item {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    color: #555;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.subtext {
+    color: #666;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.terminal-footer {
+    margin-top: 2.5rem;
+}
+
+.status-msg {
+    color: #44bb44;
+    font-family: monospace;
+    margin-bottom: 15px;
+}
+
+.cursor {
+    color: white;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
