@@ -36,3 +36,13 @@ window.addEventListener('load', () => {
     const initialActive = document.querySelector('.nav-link.active');
     moveIndicator(initialActive, activeInd);
 });
+
+
+
+
+
+
+window.addEventListener('mousemove', (e) => {
+    document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
+    document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
+});
