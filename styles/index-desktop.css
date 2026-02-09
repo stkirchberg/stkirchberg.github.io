@@ -252,3 +252,46 @@ h2, h3 {
 .whatsapp-link:hover {
     color: red !important;
 }
+
+
+
+
+
+.tech-stack-container {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    padding: 25px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.subsection-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--fg);
+    margin: 0 0 15px 0;
+    opacity: 0.8;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech-icons img {
+    height: 45px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    filter: grayscale(20%);
+}
+
+.tech-icons img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
