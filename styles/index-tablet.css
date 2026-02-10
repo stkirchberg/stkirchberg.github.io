@@ -458,6 +458,14 @@ h1 {
     word-break: break-word;
 }
 
+
+
+.content-section {
+    margin-bottom: 60px;
+    scroll-margin-top: 20px;
+}
+
+
 .cursor {
     color: white;
     animation: blink 1s step-end infinite;
