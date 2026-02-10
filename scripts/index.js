@@ -1,7 +1,7 @@
 const links = document.querySelectorAll('.nav-link');
 const activeInd = document.querySelector('.nav-indicator-active');
 const hoverInd = document.querySelector('.nav-indicator-hover');
-const sections = document.querySelectorAll('section'); // Deine Sektionen brauchen IDs (about, projects, etc.)
+const sections = document.querySelectorAll('section');
 
 function moveIndicator(element, indicator) {
     if (element) {
@@ -15,7 +15,8 @@ links.forEach(link => {
 });
 
 window.addEventListener('scroll', () => {
-    let current = "";
+    let current = "about";
+    
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         if (pageYOffset >= sectionTop - 100) {
@@ -37,13 +38,9 @@ window.addEventListener('load', () => {
     moveIndicator(initialActive, activeInd);
 });
 
-
-
-
 document.querySelector('.whatsapp-link').addEventListener('click', (e) => {
     e.preventDefault();
 });
-
 
 window.addEventListener('mousemove', (e) => {
     document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
