@@ -102,6 +102,10 @@ h2 {
     font-size: 1.3rem;
 }
 
+.contact-category h3 {
+    font-size: 1.05rem;
+}
+
 .nav-container {
     display: flex;
     justify-content: center;
@@ -339,7 +343,7 @@ h2 {
 .project-description h3 {
     margin: 0;
     font-family: 'Courier New', monospace;
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #fff;
 }
 
