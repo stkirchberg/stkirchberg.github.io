@@ -51,8 +51,9 @@ body {
     flex-shrink: 0;
     border-right: solid 2px var(--accent);
     overflow-y: auto;
-    padding: 20px;
+    padding: 30px 20px;
     box-sizing: border-box;
+    justify-content: space-between;
 }
 
 .right {
@@ -64,6 +65,17 @@ body {
     overflow-x: hidden;
 }
 
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -71,15 +83,11 @@ a {
 
 h1 {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: -1px;
     margin: 0;
     color: white;
-}
-
-h2, h3 {
-    margin: 0;
 }
 
 .nav-container {
@@ -87,17 +95,16 @@ h2, h3 {
     justify-content: center;
     position: relative;
     padding-bottom: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .nav-link {
     color: #a9abaf;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 25px;
     font-family: 'Terminus', monospace;
     transition: color 0.3s;
     z-index: 2;
+    font-size: 0.98rem;
 }
 
 .nav-indicator-active, .nav-indicator-hover {
@@ -114,29 +121,11 @@ h2, h3 {
     z-index: 3;
 }
 
-.nav-indicator-hover {
-    background-color: rgba(169, 171, 175, 0.5);
-    opacity: 0;
-    z-index: 1;
-}
-
-.nav-container:hover .nav-indicator-hover {
-    opacity: 1;
-}
-
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
 .logo {
     font-family: 'Terminus', 'Courier New', monospace;
     color: var(--accent);
     line-height: 1.2;
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 1.5rem;
     filter: drop-shadow(0 0 5px rgba(23, 147, 209, 0.3));
     display: inline-block;
@@ -144,7 +133,7 @@ h2, h3 {
 }
 
 .name-box {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .username {
@@ -155,12 +144,12 @@ h2, h3 {
 }
 
 .bio {
-    max-width: 500px;
+    max-width: 400px;
     line-height: 1.6;
 }
 
 .bio p {
-    margin: 1.2rem 0;
+    margin: 1rem 0;
     font-size: 1.05rem;
     color: var(--fg);
 }
@@ -178,10 +167,10 @@ h2, h3 {
 }
 
 .social-links {
-    margin-top: auto;
     display: flex;
     gap: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    margin-top: 0; /* Verhindert Konflikt mit justify-content */
 }
 
 .social-links a {
@@ -208,7 +197,7 @@ h2, h3 {
 
 .whatsapp-popup {
     position: absolute;
-    bottom: 40px;
+    bottom: 45px;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
     background-color: var(--accent);
@@ -242,10 +231,8 @@ h2, h3 {
 }
 
 .whatsapp-link:hover {
-    color: red !important;
+    color: #25D366 !important;
 }
-
-
 
 .skill-row {
     display: flex;
@@ -255,18 +242,10 @@ h2, h3 {
     padding: 25px;
     border-radius: 4px;
     margin-bottom: 20px;
-    transition: transform 0.2s ease, border-color 0.3s ease;
-}
-
-.skill-row:hover {
-    border-color: var(--accent);
-    transform: translateX(10px);
 }
 
 .skill-icons-wrapper {
-    width: 180px;
-    display: flex;
-    align-items: center;
+    width: 150px;
     flex-shrink: 0;
 }
 
@@ -275,44 +254,17 @@ h2, h3 {
     object-fit: contain;
 }
 
-.skill-details h3 {
-    margin: 0 0 8px 0;
-    color: var(--accent);
-}
-
-.content-section {
-    margin-bottom: 60px;
-    scroll-margin-top: 40px;
-}
-
-.projects-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
 .project-window {
     border: 1px solid #333;
     background: #0f0f0f;
-    overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .window-bar {
     background: #1a1a1a;
-    border-bottom: 1px solid #333;
     padding: 5px 12px;
     display: flex;
     justify-content: space-between;
-}
-
-.project-description {
-    padding: 20px;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
 }
 
 .status-msg {
