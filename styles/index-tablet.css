@@ -286,7 +286,7 @@ h1 {
 .project-window {
     border: 1px solid #333;
     background: #0f0f0f;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     transition: border-color 0.3s;
 }
 
