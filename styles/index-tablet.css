@@ -38,8 +38,8 @@ body {
 
 .lang-switch-wrapper {
     position: fixed;
-    top: 30px;
-    right: 40px;
+    top: 15px;
+    right: 30px;
     display: flex;
     align-items: center;
     gap: 12px;

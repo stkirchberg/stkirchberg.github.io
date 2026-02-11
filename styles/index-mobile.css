@@ -37,8 +37,8 @@ body {
 
 .lang-switch-wrapper {
     position: fixed;
-    top: 30px;
-    right: 40px;
+    top: 70px;
+    right: 10px;
     display: flex;
     align-items: center;
     gap: 12px;
