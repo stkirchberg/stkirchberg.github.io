@@ -311,17 +311,6 @@ h2, h3 {
     color: red !important;
 }
 
-.whatsapp-link {
-    position: relative;
-    z-index: 10002 !important; /* Höher als das Popup (10000) */
-    display: inline-flex;
-}
-
-.whatsapp-popup {
-    pointer-events: none !important;
-    z-index: 10000;
-}
-
 
 
 .skill-row {
