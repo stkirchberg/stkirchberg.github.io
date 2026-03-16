@@ -273,7 +273,6 @@ h2, h3 {
 }
 
 .whatsapp-popup {
-    pointer-events: none;
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -314,10 +313,14 @@ h2, h3 {
 
 .whatsapp-link {
     position: relative;
-    z-index: 10001;
-    display: block;
+    z-index: 10002 !important; /* Höher als das Popup (10000) */
+    display: inline-flex;
 }
 
+.whatsapp-popup {
+    pointer-events: none !important;
+    z-index: 10000;
+}
 
 
 
