@@ -270,6 +270,7 @@ h1 {
 }
 
 .whatsapp-popup {
+    pointer-events: none;
     position: absolute;
     bottom: 45px;
     left: 50%;

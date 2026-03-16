@@ -273,6 +273,7 @@ h2, h3 {
 }
 
 .whatsapp-popup {
+    pointer-events: none;
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -311,6 +312,11 @@ h2, h3 {
     color: red !important;
 }
 
+.whatsapp-link {
+    position: relative;
+    z-index: 10001;
+    display: block;
+}
 
 
 
